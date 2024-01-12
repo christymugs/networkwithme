@@ -15,6 +15,20 @@ body {
     background-position: center;
     margin: 0;
 }
+/* network.css */
+
+/* Style the anchor (link) element */
+a {
+    color: #007bff; /* Set the text color to a blue shade (you can use any color you prefer) */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Set the font size */
+}
+
+/* Style the anchor (link) on hover */
+a:hover {
+    color: #0056b3; /* Change the text color on hover */
+}
 
 
 .welcome-message {
