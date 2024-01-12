@@ -1,0 +1,42 @@
+<!-- index.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network with Me</title>
+    <link rel="stylesheet" href="network.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>logo</h2>
+        <nav class="navigation">
+            <a href="network.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="download">Services</a>
+            <a href="contact.html">Contact</a>
+            <div class="user-dropdown" id="userDropdown">
+                <button class="user-name" onclick="toggleDropdown()">
+                    <?php
+                    session_start();
+                    if (isset($_SESSION['username'])) {
+                        echo $_SESSION['username'];
+                    } else {
+                        echo 'User Name';
+                    }
+                    ?>
+                </button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="logout.php">Sign Out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
